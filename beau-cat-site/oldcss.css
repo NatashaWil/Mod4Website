@@ -1,0 +1,99 @@
+a:focus a:hover {
+    font-style: italic;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: url(images/pattern-of-fish-skeleton.jpg);
+
+}
+
+.center {
+    text-align: center;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 1000px;
+	margin: 5em auto;
+    padding: 40px 40px; 
+    border: 3px solid black;
+    background: linear-gradient(45deg, #b2f3cb 0%, white 50%, #b2f3cb 100%);
+
+}
+
+#img_1 {
+    float: left;
+    margin: 0 2em 1em 0;
+}
+
+#img_2 {
+    float: right;
+}
+
+/* ------------------------------------------header-----------------------------------*/
+header h1 {
+    color: #04410e;
+    padding-bottom: 50px;
+}
+
+/* ------------------------------------------navigation-----------------------------------*/
+#nav_menu ul {
+    list-style-type: none;      /*removes bullet points*/
+    margin: 0;
+    padding: 0;
+
+}
+
+#nav_menu ul li {
+    float: left;                /* li items displayed horizontally */
+}
+
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    width: 240px;
+    padding: 1em 0;
+    background-color: #04410e;
+    color: white;
+
+}
+
+#nav_menu ul li a.current {
+    color: #e6a904;
+}
+#nav_menu ul a::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* ------------------------------------------main-----------------------------------*/
+main h2 {
+    color: #04410e;
+}
+
+main h3 {
+    color: #04410e;
+    clear: left;
+    line-height: 200%;
+    border: thin solid black;
+}
+
+main ul {
+    padding-bottom: 30px;
+}
+
+footer {
+    clear: right;
+}
+
+/* ------------------------------------------FOOTER-----------------------------------*/
+p,
+ul {
+    font-size: 115%;
+}
