@@ -13,7 +13,16 @@
     <header>
         <h1 class="center">Page 1</h1>
         <link rel="stylesheet" href="/home_style.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
     </header>
+    <nav id="mobile_menu"></nav>
     <nav id="nav_menu">
         <ul>
             <li><a href="/home.html">Home</a></li>
