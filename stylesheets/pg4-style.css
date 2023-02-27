@@ -27,6 +27,7 @@ header{
 }
 
 /*nav menu */
+#mobile_menu {display: none;}
 #nav_menu{
     grid-area: navi;
     background-color: #f7c8ad;
@@ -97,4 +98,26 @@ footer{
     grid-area: foot;
     background-color: #db7f50;
     padding: 5% 0;
+    text-align: center;
 }
+
+
+@media only screen and (max-width:1067px) {
+    #section_hme{
+        width: 95%;
+    }
+    #mobile_menu {
+        display: none;
+    }
+    }
+    
+    @media only screen and (max-width:663px){
+        #mobile_menu {
+            display: block;}
+            .slicknav_menu{
+                background-color: #5a7e64 !important;
+            }
+        #nav_menu {
+            display: none;
+        }
+    }

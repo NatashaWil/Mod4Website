@@ -142,6 +142,9 @@ footer {
 
 @media only screen and (max-width:664px){
     #mobile_menu {display: block;}
+    .slicknav_menu{
+        background-color: #1fa954 !important;
+    }
     #nav_menu {
         display: none;
     }
