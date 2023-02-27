@@ -37,11 +37,7 @@ header{
     display: grid;
     grid-template:80px/ repeat(5, 1fr) ;
     align-items: center;
-    
 }
-#nav_menu ul li{
-    
-} 
 
 #nav_menu ul li a{
     width: 100%;
