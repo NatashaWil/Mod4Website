@@ -23,6 +23,8 @@ body {
 }
 
 /*    navigation    */
+#mobile_menu {display: none;}
+
 #nav_menu ul {
     display: flex;              /* flex box nav menu */
     flex-basis: 100%;
@@ -138,8 +140,9 @@ footer {
 }
 }
 
-#mobile_menu {display: block;}
-
-@media only screen and (min-width:664px){
-    
+@media only screen and (max-width:664px){
+    #mobile_menu {display: block;}
+    #nav_menu {
+        display: none;
+    }
 }

@@ -6,30 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page 2</title>
+    <link rel="stylesheet" href="/home_style.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    });
+</script>
 </head>
 
 
 <body>
     <header>
         <h1 class="center">Page 2</h1>
-        <link rel="stylesheet" href="/home_style.css">
-        <link rel="stylesheet" href="styles/slicknav.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
-	<script type="text/javascript">
-    	$(document).ready(function(){
-			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
-    	});
-    </script>
+      
     </header>
     <nav id="mobile_menu"></nav>
     <nav id="nav_menu">
         <ul>
-            <li><a href="/home.html">Home</a></li>
+            <li><a href="/index.html">Home</a></li>
             <li><a href="/submenu/page1.html">Page 1</a></li>
             <li><a href="/submenu/page2.html" class="current">Page 2</a></li>
             <li><a href="/submenu/page3.html">Page 3</a></li>
-            <li><a href="#"> Page 4</a></li>
+            <li><a href="/submenu/page4.html"> Page 4</a></li>
         </ul>
     </nav>
 
