@@ -63,6 +63,7 @@ main{
     "sec1"
     "sec2"
     "sec3"
+    "sec4"
     "foot";
     justify-content: center;
     width: 100%;
@@ -73,7 +74,7 @@ main{
 section{
     color: whitesmoke;
 }
-#sec0 {
+#sec0 {                         /* Taj Mahal */
     grid-area: sec0;
     background-color: #f7c8ad;
     padding: 20px 20px;
@@ -87,8 +88,8 @@ section{
     float: left;
     max-width: 90%;
 }
-#sec1{
-    grid-area: sec1;
+#sec1{              
+    grid-area: sec1;                    /* Buddha */
     background-color: #db7f50;
     padding: 20px 20px;
 }
@@ -102,7 +103,7 @@ section{
 }
 
 #sec2{
-    grid-area: sec2;
+    grid-area: sec2;                    /* BBall Tree */
     background-color: #e9a37f; 
     padding: 20px 20px;
 }
@@ -116,7 +117,7 @@ section{
 
 }
 
-#sec3{                                  /* Bball Tree */
+#sec3{                                  /* Flower Showder Box */
     grid-area: sec3;
     background-color: #f7c8ad;
     padding: 20px 20px;
@@ -127,14 +128,14 @@ section{
     color: #5a7e64;
 }
 #sec3_img1 {
-    max-width:50% ;
+    max-width:35% ;
 }
 #sec3_img2 {
-    max-width: 70%;
+    max-width: 54%;
     float: right;
 }
 #sec4{
-    grid-area: sec3;
+    grid-area: sec4;                    /* Kitchen */
     background-color: #f7c8ad;
     padding: 20px 20px;
 }
