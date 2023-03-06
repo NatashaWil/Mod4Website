@@ -1,0 +1,19 @@
+ Peer Suggestions: 
+
+-  I did notice that some images just awkwardly take up a whole line on your text (i.e. Page 4, section 1). 
+
+-  To improve the website's usability and design, I would use the page 4 navigation bar on the rest of the website as it is more centered
+
+- use ChatGPT to replace the lorem ipsum text
+
+- fix the threeThree in Section 3 of page 4
+
+
+
+Document the specific things you did to improve your website based on the peer feedback. 
+
+- I removed the lorem ipsum text on page 4 and input my own words. This would include removing the "threeThree" in section 3 of page 4. 
+
+- add the grid layout nav menu to the home_style.css page. Nav bar is now same on each page
+
+- Input content and images on the home, Washington, and Projects page. No longer just a layout (still a work in progress)

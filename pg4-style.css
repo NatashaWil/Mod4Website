@@ -21,7 +21,7 @@ header{
 .center{
     grid-area: head;
     text-align: center;
-    padding: 4% 0;
+    padding: 3% 0;
     background-color: white;
     
 }
@@ -35,7 +35,7 @@ header{
 #nav_menu ul {
     list-style-type: none;
     display: grid;
-    grid-template:80px/ repeat(5, 1fr) ;
+    grid-template:80px/ repeat(6, 1fr) ;
     align-items: center;
 }
 
@@ -59,6 +59,7 @@ main{
     grid-template-areas: 
     "head"
     "navi"
+    "sec0"
     "sec1"
     "sec2"
     "sec3"
@@ -72,28 +73,91 @@ main{
 section{
     color: whitesmoke;
 }
+#sec0 {
+    grid-area: sec0;
+    background-color: #f7c8ad;
+    padding: 20px 20px;
+}
+#sec0 h1 {
+    padding: .7em;
+    text-align: center;
+    color: #41634a;
+}
+#sec0_img1 {
+    float: left;
+    max-width: 90%;
+}
 #sec1{
     grid-area: sec1;
     background-color: #db7f50;
     padding: 20px 20px;
-    
 }
+#sec1 h1 {
+    padding: .7em;
+    text-align: center;
+    color: #5a7e64;
+}
+#sec1 img {
+    max-width: 60%;
+}
+
 #sec2{
     grid-area: sec2;
     background-color: #e9a37f; 
     padding: 20px 20px;
 }
-#sec3{
+#sec2 h1 {
+    padding: .7em;
+    text-align: center;
+    color: #5a7e64;
+}
+#sec2 img {
+    max-width: 90%;
+
+}
+
+#sec3{                                  /* Bball Tree */
     grid-area: sec3;
     background-color: #f7c8ad;
     padding: 20px 20px;
+}
+#sec3 h1 {
+    padding: .7em;
+    text-align: center;
+    color: #5a7e64;
+}
+#sec3_img1 {
+    max-width:50% ;
+}
+#sec3_img2 {
+    max-width: 70%;
+    float: right;
+}
+#sec4{
+    grid-area: sec3;
+    background-color: #f7c8ad;
+    padding: 20px 20px;
+}
+#sec4 h1 {
+    padding: .7em;
+    text-align: center;
+    color: #5a7e64;
+}
+#sec4_img1 {
+    max-width:33% ;
+}
+#sec4_img2 {
+    max-width: 27%;
     
+}
+#sec4_img3 {
+    max-width: 38%;
 }
 
 footer{
     grid-area: foot;
     background-color: #db7f50;
-    padding: 5% 0;
+    padding: 3% 0;
     text-align: center;
 }
 
