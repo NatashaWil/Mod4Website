@@ -1,0 +1,152 @@
+/* ----------------------------------------------------------------------------------------- elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: lcalli;
+    src: url(LCALLIG.TTF);
+}
+
+html {
+    background: url(/images/seamless-leaves-flower-506x506.jpg);
+}
+
+/* ----------------------------------------------------------------------------------------- body */
+body {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* ----------------------------------------------------------------------------------------- header */
+header {
+    color: #5a7e64;
+    font-size: 175%;
+    text-align: center;
+    padding: 3% 0;
+    background-color: white;
+    text-shadow: 2px 2px 2px #f7c8ad;
+}
+
+/* ----------------------------------------------------------------------------------------- nav */
+#mobile_menu {
+    display: none;
+}
+
+#nav_menu {
+    grid-area: navi;
+}
+
+#nav_menu ul {
+    list-style-type: none;
+    display: grid;
+    grid-template: 80px/ repeat(4, 1fr);
+    align-items: center;
+    background-color: #f7c8ad;
+}
+
+#nav_menu ul li a {
+    text-decoration: none;
+    display: block;
+    color: #41634a;
+    font-size: 120%;
+    text-align: center;
+    padding: 20px;
+    font-family: lcalli;
+    font-weight: bold;
+}
+
+#nav_menu ul li a:hover {
+    background-color: white;
+}
+
+#nav_menu a.current {
+    color: white;
+    background-color: #bad3d5;
+}
+
+/* ----------------------------------------------------------------------------------------- main */
+main {
+    max-width: 85%;
+    margin: 5%;
+    display: grid;
+    grid-gap: 60px 0;
+    grid-template: repeat(5, auto)/ 1fr;
+    grid-template-areas:
+        "ranghl"
+        "ellinor"
+        "skydive"
+        "seahawks"
+        "glassbch";
+    color: #3e1c1c;
+    /*justify-items: center;*/
+}
+
+/* ----------------------------------------------------------------------------------------- div */
+div {
+    border: 4px solid #e9a37f;
+    padding: 30px;
+    font-size: 120%;
+}
+
+div img {
+    max-height: 430px;
+    margin: 20px 0;
+    border: 1px solid white;
+}
+
+#ranger_hole {
+    grid-area: ranghl;
+    background-color: #8bb9b6;
+}
+
+#ellinor {
+    grid-area: ellinor;
+    background-color: #68948f;
+}
+
+#skydive {
+    grid-area: skydive;
+    background-color: #bad3d5;
+}
+
+#seahawks {
+    grid-area: seahawks;
+    background-color: #8bb9b6;
+}
+
+#glass_beach {
+    grid-area: glassbch;
+    background-color: #68948f;
+}
+
+/* ----------------------------------------------------------------------------------------- footer */
+footer {
+    background-color: #db7f50;
+    padding: 3% 0;
+    text-align: center;
+}
+
+/* ----------------------------------------------------------------------------------------- media query */
+@media only screen and (max-width:1067px) {
+    main {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:664px) {
+    #mobile_menu {
+        display: block;
+    }
+
+    .slicknav_menu {
+        background-color: #f7c8ad !important;
+    }
+
+    #nav_menu {
+        display: none;
+    }
+}

@@ -1,0 +1,220 @@
+/* ----------------------------------------------------------------------------------------- elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --orange-1: #db7f50;
+    --orange-2: #e9a37f;
+    --orange-3: #f7c8ad;
+    --brown-1: #6f3535;
+    --green-1: #41634a;
+    --green-2: #5a7e64;
+    --green-3: #68948f;
+    --green-4: #8bb9b6;
+    --green-5: #bad3d5;
+}
+
+@font-face {
+    font-family: lcalli;
+    src: url(/styles/LCALLIG.TTF);
+}
+
+html {
+    background: url(/images/seamless-leaves-flower-506x506.jpg)
+}
+
+/* ----------------------------------------------------------------------------------------- body */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*width: 85%;*/
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* ----------------------------------------------------------------------------------------- header */
+header {
+    color: #5a7e64;
+    font-size: 175%;
+    background-color: white;
+    padding: 3% 0;
+    text-align: center;
+    text-shadow: 2px 2px 2px #f7c8ad;
+}
+
+/* ----------------------------------------------------------------------------------------- nav menu */
+#mobile_menu {
+    display: none;
+}
+
+#nav_menu {
+    grid-area: navi;
+}
+
+#nav_menu ul {
+    list-style-type: none;
+    display: grid;
+    grid-template: 80px/ repeat(4, 1fr);
+    align-items: center;
+    background-color: #f7c8ad;
+}
+
+#nav_menu ul li a {
+    text-decoration: none;
+    display: block;
+    color: #41634a;
+    font-size: 120%;
+    text-align: center;
+    padding: 20px;
+    font-family: lcalli;
+    font-weight: bold;
+}
+
+#nav_menu ul li a:hover {
+    background-color: white;
+}
+
+#nav_menu a.current {
+    color: white;
+    background-color: #bad3d5;
+}
+
+/* ----------------------------------------------------------------------------------------- main */
+main {
+    max-width: 100%;
+    display: grid;
+    grid-template: repeat(5, auto)/ 1fr;
+    grid-template-areas:
+        "legos"
+        "legos"
+        "buddh"
+        "bball"
+        "flwrb"
+        "ktchn";
+    grid-gap: 60px 0;
+    margin: 5%;
+    color: #3e1c1c;
+}
+
+/* ----------------------------------------------------------------------------------------- div */
+div {
+    font-size: 110%;
+    padding: 40px 20px;
+    border: 3px solid #41634a;
+}
+
+div img {
+    max-height: 315px;
+    padding-top: 30px;
+}
+
+div h1 {
+    padding: .5em 0;
+}
+
+/* Legos */
+#legos {
+    grid-area: legos;
+    background-color: #db7f50;
+    border-left: 3px solid #41634a;
+}
+
+/*#leimg {
+    grid-area: leimg;
+    background-color: #db7f50;
+    border-right: 3px solid #41634a;
+} */
+
+/* Buddha Canvas */
+#buddh {
+    grid-area: buddh;
+    background-color: #e9a37f;
+    border-left: 3px solid #41634a;
+}
+
+#buimg {
+    grid-area: buimg;
+    background-color: #e9a37f;
+    border-right: 3px solid #41634a;
+}
+
+/* Bball Tree */
+#bball {
+    grid-area: bball;
+    background-color: #f7c8ad;
+    border-left: 3px solid #41634a;
+}
+
+#bbimg {
+    grid-area: bbimg;
+    background-color: #f7c8ad;
+    border-right: 3px solid #41634a;
+}
+
+/* Floral Shadow Box */
+#flwrb {
+    grid-area: flwrb;
+    background-color: #db7f50;
+    border-left: 3px solid #41634a;
+}
+
+#flimg {
+    grid-area: flimg;
+    background-color: #db7f50;
+    border-right: 3px solid #41634a;
+}
+
+/* Play Kitchen */
+#ktchn {
+    grid-area: ktchn;
+    background-color: #e9a37f;
+    border-left: 3px solid #41634a;
+}
+
+#ktimg {
+    grid-area: ktimg;
+    background-color: #e9a37f;
+    border-right: 3px solid #41634a;
+}
+
+#ktimg img {
+    width: 400px;
+
+}
+
+/* ----------------------------------------------------------------------------------------- footer */
+footer {
+    /*grid-area: foot; */
+    background-color: #db7f50;
+    padding: 3% 0;
+    text-align: center;
+}
+
+
+/* ----------------------------------------------------------------------------------------- media query */
+@media only screen and (max-width:1067px) {
+    #section_hme {
+        width: 95%;
+    }
+
+    #mobile_menu {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:663px) {
+    #mobile_menu {
+        display: block;
+    }
+
+    .slicknav_menu {
+        background-color: #5a7e64 !important;
+    }
+
+    #nav_menu {
+        display: none;
+    }
+}

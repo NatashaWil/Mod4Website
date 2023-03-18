@@ -1,0 +1,168 @@
+/* ----------------------------------------------------------------------------------------- elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: lcalli;
+    src: url(LCALLIG.TTF);
+}
+
+@font-face {
+    font-family: lemonjelly;
+    src: url(LemonJellyPersonalUse-dEqR.ttf);
+}
+
+html {
+    background: url(/images/seamless-leaves-flower-506x506.jpg);
+}
+
+/* ----------------------------------------------------------------------------------------- body */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    font-size: 120%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* ----------------------------------------------------------------------------------------- header */
+header {
+    color: #5a7e64;
+    background-color: white;
+    font-size: 175%;
+    padding: 3% 0;
+    text-align: center;
+    text-shadow: 2px 2px 2px #f7c8ad;
+}
+
+/* ----------------------------------------------------------------------------------------- navi */
+#mobile_menu {
+    display: none;
+}
+
+#nav_menu {
+    grid-area: navi;
+}
+
+#nav_menu ul {
+    list-style-type: none;
+    display: grid;
+    grid-template: 80px/ repeat(4, 1fr);
+    align-items: center;
+    background-color: #f7c8ad;
+}
+
+#nav_menu ul li a {
+    text-decoration: none;
+    display: block;
+    color: #41634a;
+    font-size: 120%;
+    text-align: center;
+    padding: 20px;
+    font-family: lcalli;
+    font-weight: bold;
+}
+
+#nav_menu ul li a:hover {
+    background-color: white;
+}
+
+#nav_menu a.current {
+    color: white;
+    background-color: #bad3d5;
+}
+
+/* ----------------------------------------------------------------------------------------- main */
+main {
+    color: #3e1c1c;
+}
+
+/* ----------------------------------------------------------------------------------------- section */
+section {
+    float: left;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    padding: 60px;
+    width: 803px;
+    background-color: #e9a37f;
+    font-size: 120%;
+}
+
+section h2 {
+    margin: 1em 0;
+}
+
+section h3 {
+    margin: .5em;
+    text-align: center;
+}
+
+#quotes {
+    font-family: lemonjelly;
+    font-size: 200%;
+    margin-top: 63px;
+    margin-bottom: 80px;
+    color: #873c3c;
+}
+
+/* ----------------------------------------------------------------------------------------- aside */
+aside {
+    float: left;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    padding: 60px;
+    width: 482px;
+    background-color: #e9a37f;
+}
+
+aside h2 {
+    text-align: center;
+    padding-top: 35px;
+}
+
+aside ul {
+    margin: 1em;
+    padding: 0 35px 35px;
+}
+
+aside img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    width: 90%;
+}
+
+/* ----------------------------------------------------------------------------------------- footer */
+footer {
+    background-color: #db7f50;
+    padding: 3% 0;
+    text-align: center;
+    clear: both;
+}
+
+/* ----------------------------------------------------------------------------------------- media query */
+
+@media only screen and (max-width:1708px) {
+    section {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width:664px) {
+    #mobile_menu {
+        display: block;
+    }
+
+    .slicknav_menu {
+        background-color: #f7c8ad !important;
+    }
+
+    #nav_menu {
+        display: none;
+    }
+}

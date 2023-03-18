@@ -1,0 +1,167 @@
+/* ----------------------------------------------------------------------------------------- elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: lcalli;
+    src: url(LCALLIG.TTF);
+}
+
+html {
+    background: url(/images/seamless-leaves-flower-506x506.jpg);
+}
+
+/* ----------------------------------------------------------------------------------------- body */
+body {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #3e1c1c;
+}
+
+/* ----------------------------------------------------------------------------------------- header */
+header {
+    color: #5a7e64;
+    font-size: 175%;
+    text-align: center;
+    padding: 3% 0;
+    background-color: white;
+    text-shadow: 2px 2px 2px #f7c8ad;
+}
+
+/* ----------------------------------------------------------------------------------------- nav */
+#mobile_menu {
+    display: none;
+}
+
+#nav_menu {
+    grid-area: navi;
+}
+
+#nav_menu ul {
+    list-style-type: none;
+    display: grid;
+    grid-template: 80px/ repeat(4, 1fr);
+    align-items: center;
+    background-color: #f7c8ad;
+}
+
+#nav_menu ul li a {
+    text-decoration: none;
+    display: block;
+    color: #41634a;
+    font-size: 120%;
+    text-align: center;
+    padding: 20px;
+    font-family: lcalli;
+    font-weight: bold;
+}
+
+#nav_menu ul li a:hover {
+    background-color: white;
+}
+
+#nav_menu a.current {
+    color: white;
+    background-color: #bad3d5;
+}
+
+/* ----------------------------------------------------------------------------------------- main */
+main {
+    margin: 5%;
+    background-color: #8bb9b6;
+}
+
+/* ----------------------------------------------------------------------------------------- div */
+div h1 {
+    text-align: center;
+    margin: 30px;
+}
+
+div img {
+    max-height: 430px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 20px solid white;
+}
+
+.column {
+    float: left;
+    width: 30.33%;
+    padding: 30px 10px;
+}
+
+.column p {
+    font-size: 120%;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* ----------------------------------------------------------------------------------------- footer */
+footer {
+    background-color: #db7f50;
+    padding: 3% 0;
+    text-align: center;
+    clear: both;
+}
+
+/* ----------------------------------------------------------------------------------------- media query */
+@media only screen and (max-width:1903px) {
+    body {
+        width: 80%;
+    }
+
+    main {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width:1304px) {
+    main {
+        width: 60%;
+    }
+
+    .column {
+        width: 85%;
+    }
+
+}
+
+@media only screen and (max-width:1175px) {
+    body {
+        width: 100%;
+    }
+
+    main {
+        width: 60%;
+    }
+
+    .column {
+        width: 55%;
+    }
+
+}
+
+@media only screen and (max-width:664px) {
+    #mobile_menu {
+        display: block;
+    }
+
+    .slicknav_menu {
+        background-color: #f7c8ad !important;
+    }
+
+    #nav_menu {
+        display: none;
+    }
+}
