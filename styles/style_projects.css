@@ -3,8 +3,8 @@
     margin: 0;
     padding: 0;
 }
-
-:root {
+/*colors used - prefer the hex with color boxes than var code*/
+/*:root {
     --orange-1: #db7f50;
     --orange-2: #e9a37f;
     --orange-3: #f7c8ad;
@@ -14,11 +14,11 @@
     --green-3: #68948f;
     --green-4: #8bb9b6;
     --green-5: #bad3d5;
-}
+}*/
 
 @font-face {
     font-family: lcalli;
-    src: url(/styles/LCALLIG.TTF);
+    src: url(LCALLIG.TTF);
 }
 
 html {
